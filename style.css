@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  height: 100vh;
+  /* background-color: yellowgreen; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.confirm-box {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message-box {
+  background: chocolate;
+  text-align: center;
+  padding: 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+.yes-button,
+.no-button {
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 14px;
+  transition: all 0.04s ease-in-out;
+  cursor: pointer;
+}
+.yes-button:hover {
+  color: aliceblue;
+  background-color: green;
+}
+.no-button:hover {
+  color: aliceblue;
+  background-color: red;
+}
+.openButton {
+  font-size: 19px;
+  padding: 14px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  z-index: 6666666;
+}
